@@ -39,6 +39,11 @@ app.get('/user/:id', checkToken, async (req, res) => {
     res.status(200).json({ user })
 })
 
+// Iniciar o servidor
+app.listen(3000, () => {
+    console.log('Servidor iniciado na porta 3000');
+  });
+
 function checkToken(req, res, next) {
     const authHeader = req.headers['authorization']
     const token = authHeader && authHeader.split(" ")[1]
