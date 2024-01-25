@@ -9,5 +9,6 @@
     { "src": "/auth/register", "dest": "src/app.js" },
     { "src": "/auth/login", "dest": "src/app.js" },
     { "src": "/(.*)", "dest": "src/app.js" }
+    { "src": "/(.*)", "dest": "src/login.html" }
   ]
 }
