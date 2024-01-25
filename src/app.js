@@ -20,6 +20,11 @@ app.get('/', (req, res) => {
     res.status(200).json({ msg: 'Bem Vindo ao Meu Servidor' });
   });
 
+  // Rota para o index.html
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + 'src/login.html');
+  });
+
 //Private Route
 app.get('/user/:id', checkToken, async (req, res) => {
     const id = req.params.id
