@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conta Registrada</title>
+    <link href="output.css" rel="stylesheet">
+</head>
+<body class="flex text-white items-center justify-center w-full h-screen font-dm bg-gradient-to-br from-gray-900 to-gray-900 mobile:bg-[url('/img/bg-login.jpg')] bg-center">
+    <section class="w-4/6 h-[450px] rounded-2xl bg-gray-950 flex shadow-[0px_10px_15px] shadow-zinc-950 windscreen:w-3/6 mobile:w-[350px] mobile:h-[300px] tablet:w-5/6 tablet:h-[310px] tablet:justify-center">
+        <section class="w-5/12 flex justify-center items-center flex-col mobile:w-full tablet:w-10/12" id="form">
+         <h1 class="text-xl font-bold text-white my-6 mobile:text-lg">Conta Criada com Sucesso
+        <span class="inline-block">&#9989</span>
+        </h1>
+            <button class="bg-gradient-to-tr from[#4158D0] via-[#bc1eb2] to[#000] w-4/6 py-1 rounded-xl hover:bg-gradient-to-tr hover:from-[#4158D0] hover:via-[#1EE0E1] hover:to-[#000] mobile:w-5/6 tablet:w-5/6" onclick="redirectToLoginPage()">
+               Entrar
+            </button>
+
+            <div class="w-ful flex justify-center pt-4 tablet:pt-5 desktop:hidden">
+                <img class="w-[100px]" src="../img/logo-removebg-preview.png" alt="">
+            </div>
+        </section>
+
+        <section class="flex basis-7/12 bg-[url('/img/bg-login.jpg')] bg-center rounded-r-2xl shadow-[inset_300px_30px_600px_-100px_theme(colors.gray.950)] mobile:hidden" id="picture">
+            <div class="w-full flex items-start justify-end pr-4 pt-4">
+                <img class="w-[130px] rounded-full" src="../img/logo.jpg" alt="">
+            </div>
+            
+        </section>
+    </section>
+        
+</body>
+</html>
+
+<!-- SCRIPT -->
+<script>
+    function redirectToLoginPage() {
+        // Redirecionar para a página de login
+        window.location.href = './login.html';
+    }
+</script>
+
+</body>
+</html>

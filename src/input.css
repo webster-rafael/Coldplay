@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-main
+{
+    background: linear-gradient(90deg, rgba(4,1,28,1) 100%, rgba(4,1,28,1) 100%, rgba(196,34,67,0.47960434173669464) 100%);
+}
+
+
+.bg-secondary
+{
+    background: var(--Unnamed-Color, linear-gradient(104deg, #DF1CFF -25.59%, #EA0070 138%));
+}
+
+.teste
+{
+    color: #120b49d0;
+    
+}
+
+.slick-slide {
+    margin:0 15px;
+}
+  
+  
+

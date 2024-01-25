@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Helvetica">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <title>Coldplay</title>
+    <link href="output.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body class="h-full w-full bg-main py-8 px-16 mobile:px-3 windscreen:px-56">
+    <nav class="flex justify-between w-full font-helvetica mobile:px-2">
+        <div class="flex justify-center items-center gap-2">
+            <img class="w-[40px] rounded-full mobile:w-[20px]" src="../img/logo.jpg" alt="">
+            <a class="text-rosa font-helvetica font-semibold mobile:text-sm" href="">COLDPLAY.</a>
+        </div>
+        <div class="flex justify-between gap-11 mobile:hidden">
+            <a class="text-white50 hover:text-white" href="">Home</a>
+            <a class="text-white50 hover:text-white" href="">Galeria</a>
+            <a class="text-white50 hover:text-white" href="">Show's</a>
+            <a class="text-white50 hover:text-white" href="">Ingressos</a>
+            <a class="text-white50 hover:text-white" href="">Contato</a>
+        </div>
+        <div>
+            <button class="text-white font-semibold bg-rosa50 border border-rosa rounded-md px-8 py-1 hover:bg-pink-800 mobile:px-3 mobile:text-sm">
+                <a href="">Saiba Mais</a>
+            </button>
+        </div>
+    </nav>
+
+    <section class="flex w-full h-full mobile:flex-col mobile:px-3">
+        
+            <div class="text-white font-poppins pt-16 mobile:pt-8">
+                <h1 class="text-5xl font-semibold mobile:text-3xl" >Uma Cabeça <br> Cheia De <span class="text-span italic font-normal">Cores</span>.</h1>
+                <p class="mobile:text-xs mobile:text-white50">"Nobody said it was easy, no one ever said it would <br> be this hard” – Coldplay</p>
+
+                <div class="pt-12 mobile:pt-4 mobile:flex mobile:justify-center">
+                    <button class="bg-rosa px-6 py-1 rounded-md text-md font-helvetica font-semibold hover:bg-pink-600 shadow-lg shadow-blue-800/50 mobile:px-5 mobile:text-sm mobile:py-2" >
+                        <a href="">Explore Mais</a>
+                    </button>
+                </div>
+
+                <div class="pt-16 mobile:pt-8">
+                    <div class="flex gap-2">
+                        <img class="w-6 h-6 mobile:-w-3 mobile:h-5" src="../img/eye.png" alt="">
+                        <h1 class="font-poppins font-semibold text-xl mobile:text-base">Músicas mais Populares da Spotify</h1>
+                    </div>
+                    <div class="grid grid-cols-4 gap-4 text-xs pt-6 text-center mobile:pt-4 mobile:grid-cols-2">
+                        <div class="text-white50">
+                            <h1 class="mobile:text-sm">Yellow</h1>
+                            <p class="pt-2 font-poppins font-semibold text-lg text-white mobile:text-xs">2.023.707.590 +</p>
+                        </div>
+                        <div class="text-white50">
+                            <h1 class="mobile:text-sm">Viva La vida</h1>
+                            <p class="pt-2 font-poppins font-semibold text-lg text-white mobile:text-xs">1.845.407.655 +</p>
+                        </div>
+                        <div class="text-white50">
+                            <h1 class="mobile:text-sm">Something Just Like This</h1>
+                            <p class="pt-2 font-poppins font-semibold text-lg text-white mobile:text-xs">2.379.887.615 +</p>
+                        </div>
+                        <div class="text-white50">
+                            <h1 class="mobile:text-sm">Sparks</h1>
+                            <p class="pt-2 font-poppins font-semibold text-lg text-white mobile:text-xs">790.010.337 +</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="pt-16 mobile:pt-5">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="443" height="561" viewBox="0 0 643 861" fill="none" class="mobile:w-[400px] mobile:h-[450px] mobile:pb-1 mobile:relative right-10 overflow-hidden">
+                            <foreignObject x="35" y="35" width="529" height="529">
+                                <div xmlns="http://www.w3.org/1999/xhtml" class="w-full h-full bg-bordas rounded-full overflow-hidden">
+                                    <img class="w-full h-full object-cover rounded-full mobile:w-[700px] mobile:h-[700px]" src="../img/Chris.png" alt="">
+                                </div>
+                            </foreignObject>
+                            <mask id="path-1-inside-1_0_34" fill="white">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M489.162 591.324C469.076 571.238 438.077 568.124 411.717 578.709C303.675 622.096 175.474 600.024 87.9428 512.493C-29.1024 395.448 -29.1024 205.68 87.9428 88.635C204.988 -28.4103 394.756 -28.4103 511.801 88.635C599.332 176.166 621.404 304.368 578.017 412.411C567.431 438.77 570.545 469.77 590.631 489.855C607.881 507.105 633.599 511.586 657.752 508.159C710.987 500.608 767.001 517.306 807.948 558.253C877.091 627.396 877.091 739.498 807.948 808.641C738.805 877.784 626.702 877.784 557.56 808.641C516.613 767.694 499.915 711.68 507.466 658.445C510.892 634.292 506.412 608.574 489.162 591.324Z"/>
+                            </mask>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M489.162 591.324C469.076 571.238 438.077 568.124 411.717 578.709C303.675 622.096 175.474 600.024 87.9428 512.493C-29.1024 395.448 -29.1024 205.68 87.9428 88.635C204.988 -28.4103 394.756 -28.4103 511.801 88.635C599.332 176.166 621.404 304.368 578.017 412.411C567.431 438.77 570.545 469.77 590.631 489.855C607.881 507.105 633.599 511.586 657.752 508.159C710.987 500.608 767.001 517.306 807.948 558.253C877.091 627.396 877.091 739.498 807.948 808.641C738.805 877.784 626.702 877.784 557.56 808.641C516.613 767.694 499.915 711.68 507.466 658.445C510.892 634.292 506.412 608.574 489.162 591.324Z" fill="url(#paint0_linear_0_34)"/>
+
+                            
+
+                            <path d="M657.752 508.159L658.173 511.13L657.752 508.159ZM578.017 412.411L580.801 413.529L578.017 412.411ZM411.717 578.709L410.599 575.925L411.717 578.709ZM85.8215 514.615C174.232 603.025 303.718 625.312 412.835 581.493L410.599 575.925C303.633 618.88 176.715 597.023 90.0641 510.372L85.8215 514.615ZM85.8215 86.5136C-32.3953 204.73 -32.3953 396.398 85.8215 514.615L90.0641 510.372C-25.8095 394.498 -25.8095 206.63 90.0641 90.7563L85.8215 86.5136ZM513.922 86.5136C395.706 -31.7032 204.038 -31.7032 85.8215 86.5136L90.0641 90.7563C205.938 -25.1174 393.806 -25.1174 509.68 90.7563L513.922 86.5136ZM580.801 413.529C624.62 304.411 602.333 174.924 513.922 86.5136L509.68 90.7563C596.331 177.408 618.188 304.326 575.233 411.293L580.801 413.529ZM810.069 556.132C768.427 514.489 711.459 497.511 657.331 505.189L658.173 511.13C710.515 503.705 765.575 520.122 805.827 560.374L810.069 556.132ZM810.069 810.762C880.384 740.448 880.384 626.446 810.069 556.132L805.827 560.374C873.798 628.345 873.798 738.549 805.827 806.52L810.069 810.762ZM555.438 810.762C625.753 881.077 739.755 881.077 810.069 810.762L805.827 806.52C737.855 874.491 627.652 874.491 559.681 806.52L555.438 810.762ZM504.496 658.024C496.818 712.153 513.796 769.12 555.438 810.762L559.681 806.52C519.429 766.268 503.012 711.208 510.437 658.866L504.496 658.024ZM588.51 491.977C606.663 510.13 633.476 514.633 658.173 511.13L657.331 505.189C633.721 508.538 609.099 504.08 592.753 487.734L588.51 491.977ZM510.437 658.866C513.94 634.17 509.437 607.356 491.284 589.203L487.041 593.445C503.387 609.792 507.845 634.414 504.496 658.024L510.437 658.866ZM575.233 411.293C564.307 438.5 567.387 470.854 588.51 491.977L592.753 487.734C573.703 468.685 570.555 439.041 580.801 413.529L575.233 411.293ZM412.835 581.493C438.348 571.248 467.992 574.396 487.041 593.445L491.284 589.203C470.161 568.08 437.806 565 410.599 575.925L412.835 581.493Z" fill="url(#paint1_linear_0_34)" mask="url(#path-1-inside-1_0_34)"/>
+                            <defs>
+                              <linearGradient id="paint0_linear_0_34" x1="146.861" y1="65.7427" x2="701.285" y2="1061.36" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#462FFF" stop-opacity="0.08"/>
+                                <stop offset="1" stop-color="#4730FF" stop-opacity="0"/>
+                              </linearGradient>
+                              <linearGradient id="paint1_linear_0_34" x1="127.767" y1="114.177" x2="489.729" y2="939.627" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#4484FF"/>
+                                <stop offset="1" stop-opacity="0"/>
+                              </linearGradient>
+                            </defs>
+                          </svg>
+                    </div>         
+            </div>
+    </section>
+
+    <section class="text-white h-full w-full mobile:px-3">
+        <div class="flex justify-center text-center flex-col font-poppins text-2xl pb-10">
+            <h1>Álbuns Mais <span class="font-helvetica italic text-span font-semibold">Populares</span></h1>
+            <p class="text-sm italic text-white50 mobile:text-xs">“Ela sonhava com o paraíso, toda vez que fechava os olhos.”</p>
+        </div>
+    
+        <div class="font-helvetica flex justify-center autoplay2">
+            <div class="pt-6 w-[332px] h-[450px] bg-azulFundo border-2 border-yellow-400 text-center rounded-md shadow-2xl shadow-blue-800/50 mobile:w-full">
+                <div class="flex flex-col justify-center items-center h-full">
+                    <div class="relative overflow-hidden w-[300px] h-[320px] group">
+                        <div class="absolute top-0 left-0 w-full h-full bg-main bg-opacity-70 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                            <p class="m-0"><span class="text-span">1.</span> "Don't Panic" <br>
+                                <span class="text-span">2.</span> "Shiver" <br>
+                                <span class="text-span">3.</span> "Spies" <br>
+                                <span class="text-span">4.</span> "Sparks" <br>
+                                <span class="text-span">5.</span> "Yellow" <br>
+                                <span class="text-span">6.</span> "Trouble" <br>
+                                <span class="text-span">7.</span> "Parachutes" <br>
+                                <span class="text-span">8.</span> "High Speed" <br>
+                                <span class="text-span">9.</span> "We Never Change" <br>
+                                <span class="text-span">10.</span> "Everything's Not Lost" </p>
+                        </div>
+                        <img class="w-full h-full transition-transform duration-300 transform translate-y-0 group-hover:translate-y-80 mobile:w-full" src="../img/Parachutes.jpg" alt="">
+                    </div>
+                    <div class="w-full pt-2">
+                        <h2>Parachutes - 2000</h2>
+                        <p class="text-white50 italic text-sm">Lançamento: 10 de julho de 2000</p>
+                        <div class="py-2 pb-4">
+                            <button class="w-5/6 py-1 bg-rosa rounded-md hover:bg-span shadow-lg shadow-blue-800/50">
+                                <a href="">Saiba Mais</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-6 w-[332px] h-[450px] bg-azulFundo flex justify-center text-center flex-wrap border-2 border-white rounded-md shadow-2xl shadow-blue-800/50">
+                <div class="flex flex-col justify-center items-center h-full">
+                    <div class="relative overflow-hidden w-[300px] h-[320px] group">
+                        <div class="absolute top-0 left-0 w-full h-full bg-main bg-opacity-70 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                            <p class="m-0"><span class="text-span">1.</span> "Politik" <br>
+                                <span class="text-span">2.</span> "In My Place" <br>
+                                <span class="text-span">3.</span> "God Put a Smile upon Your Face" <br>
+                                <span class="text-span">4.</span> "The Scientist" <br>
+                                <span class="text-span">5.</span> "Clocks" <br>
+                                <span class="text-span">6.</span> "Daylight" <br>
+                                <span class="text-span">7.</span> "Green Eyes" <br>
+                                <span class="text-span">8.</span> "Warning Sign" <br>
+                                <span class="text-span">9.</span> "A Whisper" <br>
+                                <span class="text-span">10.</span> "A Rush of Blood to the Head" <br>
+                                <span class="text-span">11.</span> "Amsterdam"
+                            </p>
+
+                        </div>
+                        <img class="w-full h-full transition-transform duration-300 transform translate-y-0 group-hover:translate-y-80" src="../img/A_Rush_of_Blood_to_the_Head.jpg" alt="">
+                    </div>
+                <div class="w-full pt-2">
+                    <h2>A Rush of Blood to the Head - 2002</h2>
+                    <p class="text-white50 italic text-sm">Lançamento: 26 de agosto de 2002</p>
+                    <div class="py-2 pb-4">
+                        <button class="w-5/6 py-1 bg-rosa rounded-md hover:bg-span shadow-lg shadow-blue-800/50">
+                            <a href="">Saiba Mais</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="pt-6 w-[332px] h-[450px] bg-azulFundo flex justify-center text-center flex-wrap border-2 border-span rounded-md shadow-2xl shadow-blue-800/50">
+                <div class="flex flex-col justify-center items-center h-full">
+                    <div class="relative overflow-hidden w-[300px] h-[320px] group">
+                        <div class="absolute top-0 left-0 w-full h-full bg-main bg-opacity-70 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                            <p class="m-0">
+                                <span class="text-span">1.</span> "A Head Full of Dreams" <br>
+                                <span class="text-span">2.</span> "Birds" <br>
+                                <span class="text-span">3.</span> "Hymn for the Weekend" <br>
+                                <span class="text-span">4.</span> "Everglow" <br>
+                                <span class="text-span">5.</span> "Adventure of a Lifetime" <br>
+                                <span class="text-span">6.</span> "Fun" (com Tove Lo) <br>
+                                <span class="text-span">7.</span> "Kaleidoscope" <br>
+                                <span class="text-span">8.</span> "Army of One" <br>
+                                <span class="text-span">9.</span> "Amazing Day" <br>
+                                <span class="text-span">10.</span> "Colour Spectrum" <br>
+                                <span class="text-span">11.</span> "Up&Up"
+                            </p>
+                            
+                        </div>
+                        <img class="w-full h-full transition-transform duration-300 transform translate-y-0 group-hover:translate-y-80" src="../img/Coldplay-A-Head-Full-of-Dreams-2015.jpg" alt="">
+                    </div>    
+                <div class="w-full pt-2">
+                    <h2>A Head Full of Dreams - 2015</h2>
+                    <p class="text-white50 italic text-sm">Lançamento: 4 de dezembro de 2015</p>
+                    <div class="py-2 pb-4">
+                        <button class="w-5/6 py-1 bg-rosa rounded-md hover:bg-span shadow-lg shadow-blue-800/50">
+                            <a href="">Saiba Mais</a>
+                        </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="pt-6 w-[332px] h-[450px] bg-azulFundo flex justify-center text-center flex-wrap border-2 border-rosa rounded-md shadow-2xl shadow-blue-800/50">
+                <div class="flex flex-col justify-center items-center h-full">
+                    <div class="relative overflow-hidden w-[300px] h-[320px] group">
+                        <div class="absolute top-0 left-0 w-full h-full bg-main bg-opacity-70 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                            <p class="m-0 text-sm">
+                                <span class="text-span">1.</span> "Mylo Xyloto" <br>
+                                <span class="text-span">2.</span> "Hurts Like Heaven" <br>
+                                <span class="text-span">3.</span> "Paradise" <br>
+                                <span class="text-span">4.</span> "Charlie Brown" <br>
+                                <span class="text-span">5.</span> "Us Against the World" <br>
+                                <span class="text-span">6.</span> "M.M.I.X." <br>
+                                <span class="text-span">7.</span> "Every Teardrop Is a Waterfall" <br>
+                                <span class="text-span">8.</span> "Major Minus" <br>
+                                <span class="text-span">9.</span> "U.F.O" <br>
+                                <span class="text-span">10.</span> "Princess of China" (com participação de Rihanna) <br>
+                                <span class="text-span">11.</span> "Up in Flames" <br>
+                                <span class="text-span">12.</span> "A Hopeful Transmission" <br>
+                                <span class="text-span">13.</span> "Don't Let It Break Your Heart" <br>
+                                <span class="text-span">14.</span> "Up with the Birds"
+                            </p>
+                            
+                        </div>
+                        <img class="w-full h-full transition-transform duration-300 transform translate-y-0 group-hover:translate-y-80" src="../img/Myloxyloto.jpg" alt="">
+                    </div>
+                <div class="w-full pt-2">
+                    <h2>Mylo Xyloto - 2011</h2>
+                    <p class="text-white50 italic text-sm">Lançamento: 24 de outubro de 2011</p>
+                    <div class="py-2 pb-4">
+                        <button class="w-5/6 py-1 bg-rosa rounded-md hover:bg-span shadow-lg shadow-blue-800/50">
+                            <a href="">Saiba Mais</a>
+                        </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="pt-6 w-[332px] h-[450px] bg-azulFundo flex justify-center text-center flex-wrap border-2 border-amber-900 rounded-md shadow-2xl shadow-blue-800/50">
+                <div class="flex flex-col justify-center items-center h-full">
+                    <div class="relative overflow-hidden w-[300px] h-[320px] group">
+                        <div class="absolute top-0 left-0 w-full h-full bg-main bg-opacity-70 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                            <p class="m-0">
+                                <span class="text-span">1.</span> "Life in Technicolor" <br>
+                                <span class="text-span">2.</span> "Cemeteries of London" <br>
+                                <span class="text-span">3.</span> "Lost!" <br>
+                                <span class="text-span">4.</span> "42" <br>
+                                <span class="text-span">5.</span> "Lovers in Japan/Reign of Love" <br>
+                                <span class="text-span">6.</span> "Yes" <br>
+                                <span class="text-span">7.</span> "Viva la Vida" <br>
+                                <span class="text-span">8.</span> "Violet Hill" <br>
+                                <span class="text-span">9.</span> "Strawberry Swing" <br>
+                                <span class="text-span">10.</span> "Death and All His Friends"
+                            </p>
+                            
+                        </div>
+                        <img class="w-full h-full transition-transform duration-300 transform translate-y-0 group-hover:translate-y-80" src="../img/Vivalavida.jpg" alt="">
+                    </div>
+                <div class="w-full pt-2">
+                    <h2>Viva la Vida - 2008</h2>
+                    <p class="text-white50 italic text-sm">Lançamento: 12 de junho de 2008</p>
+                    <div class="py-2 pb-4">
+                        <button class="w-5/6 py-1 bg-rosa rounded-md hover:bg-span shadow-lg shadow-blue-800/50">
+                            <a href="">Saiba Mais</a>
+                        </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="pt-6 w-[332px] h-[450px] bg-azulFundo flex justify-center text-center flex-wrap border-2 border-green-700 rounded-md shadow-2xl shadow-blue-800/50">
+                <div class="flex flex-col justify-center items-center h-full">
+                    <div class="relative overflow-hidden w-[300px] h-[320px] group">
+                        <div class="absolute top-0 left-0 w-full h-full bg-main bg-opacity-70 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                            <p class="m-0 text-sm">
+                                <span class="text-span">1.</span> "Square One" <br>
+                                <span class="text-span">2.</span> "What If" <br>
+                                <span class="text-span">3.</span> "White Shadows" <br>
+                                <span class="text-span">4.</span> "Fix You" <br>
+                                <span class="text-span">5.</span> "Talk" <br>
+                                <span class="text-span">6.</span> "X&Y" <br>
+                                <span class="text-span">7.</span> "Speed of Sound" <br>
+                                <span class="text-span">8.</span> "A Message" <br>
+                                <span class="text-span">9.</span> "Low" <br>
+                                <span class="text-span">10.</span> "The Hardest Part" <br>
+                                <span class="text-span">11.</span> "Swallowed in the Sea" <br>
+                                <span class="text-span">12.</span> "Twisted Logic" <br>
+                                <span class="text-span">13.</span> "Til Kingdom Come"
+                            </p>
+                            
+                        </div>
+                        <img class="w-full h-full transition-transform duration-300 transform translate-y-0 group-hover:translate-y-80" src="../img/X_y.jpg" alt="">
+                    </div>    
+                <div class="w-full pt-2">
+                    <h2>X&Y - 2005</h2>
+                    <p class="text-white50 italic text-sm">Lançamento: 6 de junho de 2005</p>
+                    <div class="py-2 pb-4">
+                        <button class="w-5/6 py-1 bg-rosa rounded-md hover:bg-span shadow-lg shadow-blue-800/50">
+                            <a href="">Saiba Mais</a>
+                        </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="w-full flex justify-center py-10 mobile:pt-2"> 
+            <button class="px-16 py-1 rounded-md bg-rosa50 hover:bg-pink-800 border border-rosa mobile:hidden">Saiba Mais</button>
+        </div>
+
+        
+    </section>
+
+    <section class="h-full w-full pt-10 mobile:pt-1 mobile:px-3">
+        <div class="flex flex-col justify-center text-center text-white pt-8 mobile:pt-1">
+            <h1 class="text-2xl font-helvetica mobile:text-xl">Algumas <span class="text-span font-poppins italic font-semibold text-2xl mobile:text-lg">curiosidades</span> de Coldplay</h1>
+            <p class="text-sm font-poppins italic text-white50">"Você é Lar, lar para onde eu queria ir"</p>
+        </div>
+
+        <div class="flex justify-center pt-10 mobile:pt-8">
+            <div class="grid grid-cols-2 gap-8 w-full text-span mobile:grid-cols-1">
+                <div class="flex flex-col border border-rosa shadow-xl rounded-md h-[180px] justify-center bg-rosa50 hover:bg-pink-500 group">
+                    <div class="flex justify-between items-center">
+                        <h3 class="pb-2 px-4 font-poppins italic text-md">Primeira Música</h3>
+                        <div class="px-4 mb-5 mobile:mb-3">
+                            <img class="w-[50px] rounded-full" src="../img/Coldplay-A-Head-Full-of-Dreams-2015.jpg" alt="">
+                        </div>
+                    </div>
+                    <p class="px-4 font-helvetica text-sm text-white opacity-65 group-hover:text-black group-hover:opacity-100 mobile:text-xs">A primeira música oficial lançada pelo Coldplay foi <span class="text-span underline italic">"Brothers & Sisters"</span>, em 1999, como parte de um EP limitado antes do álbum de estreia "Parachutes" em 2000. A faixa ajudou a estabelecer a presença da banda na indústria musical.</p>
+                </div>
+                <div class="flex flex-col border border-rosa shadow-xl rounded-md h-[180px] justify-center bg-rosa50 hover:bg-pink-500 group">
+                    <div class="flex justify-between items-center">
+                        <h3 class="pb-2 px-4 font-poppins italic text-md">Onde foi seu primeiro Show?</h3>
+                        <div class="px-4 mb-5 mobile:mb-3">
+                            <img class="w-[50px] rounded-full" src="../img/A_Rush_of_Blood_to_the_Head.jpg" alt="">
+                        </div>
+                    </div>
+                    <p class="px-4 font-helvetica text-sm text-white opacity-65 group-hover:text-black group-hover:opacity-100 mobile:text-xs">O primeiro show do Coldplay ocorreu em 16 de janeiro de 1998, no <span class="text-span underline italic">Camden Falcon</span>, um pub em Londres, quando a banda ainda estava se formando. Desde então, o Coldplay se tornou uma das bandas de rock mais populares do mundo.</p>
+                </div>
+                <div class="flex flex-col border border-rosa shadow-xl rounded-md h-[180px] justify-center bg-rosa50 hover:bg-pink-500 group">
+                    <div class="flex justify-between items-center">
+                        <h3 class="pb-2 px-4 font-poppins italic text-md">Como se conheceram?</h3>
+                        <div class="px-4 mb-5 mobile:mb-3">
+                            <img class="w-[50px] rounded-full" src="../img/Myloxyloto.jpg" alt="">
+                        </div>
+                    </div>
+                    <p class="px-4 font-helvetica text-sm text-white opacity-65 group-hover:text-black group-hover:opacity-100 mobile:text-xs">Os membros se conheceram enquanto estudavam na University College London na década de 1990. Chris Martin conheceu Jonny Buckland durante a orientação para calouros, e com Guy Berryman e Will Champion, formaram a banda em 1996.</p>
+                </div>
+                <div class="flex flex-col border border-rosa shadow-xl rounded-md h-[180px] justify-center bg-rosa50 hover:bg-pink-500 group">
+                    <div class="flex justify-between items-center">
+                        <h3 class="pb-2 px-4 font-poppins italic text-md">De onde saiu "Coldplay"?</h3>
+                        <div class="px-4 mb-5 mobile:mb-3">
+                            <img class="w-[50px] rounded-full" src="../img/Parachutes.jpg" alt="">
+                        </div>
+                    </div>
+                    <p class="px-4 font-helvetica text-sm text-white opacity-65 group-hover:text-black group-hover:opacity-100 mobile:text-xs">Inicialmente, a banda se chamava "Starfish", O nome <span class="text-span underline italic pr-1">"Coldplay"</span>foi sugerido por um amigo da banda antes do lançamento de seu primeiro álbum, "Parachutes", em 2000. A escolha foi baseada na simplicidade e memorabilidade do nome.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="h-full w-full text-white pt-8 mobile:px-3">
+        <div class="flex flex-col justify-center text-center w-full mobile:px-2">
+            <h1 class="font-helvetica text-2xl mobile:text-xl"><span class="text-span italic font-semibold font-poppins">Retratos:</span> Membros do Coldplay"</h1>
+            <p class="text-sm text-white50 font-poppins italic mobile:text-xs">"Am I a part of the cure or am I part of the disease?"</p>
+        </div>
+
+        <div class="flex justify-between pt-7 mobile:grid mobile:grid-cols-3 mobile:gap-5">        
+                <div class="w-1/6 py-3 flex justify-center font-poppins mobile:mx-auto mobile:w-full">
+                    <div class="flex flex-col items-center pt-1">
+                        <img class="w-[100px] h-[100px] border-2 border-span rounded-full" src="../img/ChrisMartin.jpg" alt="">
+                        <h4 class="pt-3 text-rosa mobile:text-xs">Chris Martin</h4>
+                        <p class="text-xs text-center text-white50 italic font-helvetica">"Vocalista"</p>
+                    </div>
+                </div>
+                <div class="w-1/6 py-3 flex justify-center font-poppins mobile:mx-auto mobile:w-full">
+                    <div class="flex flex-col items-center pt-1">
+                        <img class="w-[100px] h-[100px] border-2 border-span rounded-full" src="../img/GuyBerryman.jpg" alt="">
+                        <h4 class="pt-3 text-rosa mobile:text-xs">Guy Berryman</h4>
+                        <p class="text-xs text-center text-white50 italic font-helvetica">"Baixista"</p>
+                    </div>
+                </div>
+                <div class="w-1/6 py-3 flex justify-center font-poppins mobile:mx-auto mobile:w-full">
+                    <div class="flex flex-col items-center pt-1">
+                        <img class="w-[100px] h-[100px] border-2 border-span rounded-full" src="../img/Jhony.jpg" alt="">
+                        <h4 class="pt-3 text-rosa mobile:text-xs">Jonny Buckland</h4>
+                        <p class="text-xs text-center text-white50 italic font-helvetica">"Guitarrista"</p>
+                    </div>
+                </div>
+                <div class="w-1/6 py-3 flex justify-center font-poppins  mobile:w-full mobile:col-span-1 mobile:ml-16 mobile:py-1">
+                    <div class="flex flex-col items-center pt-1 mobile:pt-0">
+                        <img class="w-[100px] h-[100px] border-2 border-span rounded-full" src="../img/Will-Champion.png" alt="">
+                        <h4 class="pt-3 text-rosa mobile:text-xs">Will Champion</h4>
+                        <p class="text-xs text-center text-white50 italic font-helvetica">"Baterista"</p>
+                    </div>
+                </div>  
+                <div class="w-1/6 py-3 flex justify-center font-poppins mobile:w-full mobile:col-span-2 mobile:mx-auto mobile:py-1">
+                    <div class="flex flex-col items-center pt-1 mobile:pt-0">
+                        <img class="w-[100px] h-[100px] border-2 border-span rounded-full" src="../img/Phil_Harvey.png" alt="">
+                        <h4 class="pt-3 text-rosa mobile:text-xs">Phil Harvey</h4>
+                        <p class="text-xs text-center text-white50 italic font-helvetica">"Diretor Criativo"</p>
+                    </div>
+                </div>    
+        </div>
+
+        <div class="flex gap-4 pt-6 autoplay mobile:gap-4 ">
+            <img class="w-[180px] px-4 rounded-full mobile:px-2 mobile:-mr-[3px] mobile:-ml-[3px]" src="../img/retrato-1.jpg" alt="">
+            <img class="w-[180px] px-4 rounded-full mobile:px-2 mobile:-mr-[3px] mobile:-ml-[3px]" src="../img/retrato-2.jpg" alt="">
+            <img class="w-[180px] px-4 rounded-full mobile:px-2 mobile:-mr-[3px] mobile:-ml-[3px]" src="../img/retrato-3.jpg" alt="">
+            <img class="w-[180px] px-4 rounded-full mobile:px-2 mobile:-mr-[3px] mobile:-ml-[3px]" src="../img/retrato-4.jpg" alt="">
+            <img class="w-[180px] px-4 rounded-full mobile:px-2 mobile:-mr-[3px] mobile:-ml-[3px]" src="../img/retrato-5.jpg" alt="">
+            <img class="w-[180px] px-4 rounded-full mobile:px-2 mobile:-mr-[3px] mobile:-ml-[3px]" src="../img/retrato-6.jpg" alt="">
+            <img class="w-[180px] px-4 rounded-full mobile:px-2 mobile:-mr-[3px] mobile:-ml-[3px]" src="../img/retrato-7.jpg" alt="">
+            <img class="w-[180px] px-4 rounded-full mobile:px-2 mobile:-mr-[3px] mobile:-ml-[3px]" src="../img/retrato-8.jpg" alt="">
+            <img class="w-[180px] px-4 rounded-full mobile:px-2 mobile:-mr-[3px] mobile:-ml-[3px]" src="../img/retrato-9.jpg" alt="">
+            <img class="w-[180px] px-4 rounded-full mobile:px-2 mobile:-mr-[3px] mobile:-ml-[3px]" src="../img/retrato-10.jpg" alt="">
+        </div>
+
+    </section>
+    <script src="carrosel.js"></script>
+</body>
+</html>
