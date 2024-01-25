@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
 
   // Rota para o index.html
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + 'src/login.html');
+    res.sendFile(__dirname + '/login.html');
   });
 
 //Private Route
