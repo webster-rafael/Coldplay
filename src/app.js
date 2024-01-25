@@ -13,7 +13,7 @@ app.use(cors());
 app.use(express.json())
 
 //Models.
-const User = require('./models/User')
+const User = require('../models/User')
 
 // Public route
 app.get('/', (req, res) => {
