@@ -16,14 +16,10 @@ app.use(express.json())
 const User = require('../models/User')
 
 // Public route
-app.get('/', (req, res) => {
+app.get('./src/login.html', (req, res) => {
     res.status(200).json({ msg: 'Bem Vindo ao Meu Servidor' });
   });
 
-  // Rota para o index.html
-app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/login.html');
-  });
 
 //Private Route
 app.get('/user/:id', checkToken, async (req, res) => {
@@ -39,10 +35,6 @@ app.get('/user/:id', checkToken, async (req, res) => {
     res.status(200).json({ user })
 })
 
-// Iniciar o servidor
-app.listen(3000, () => {
-    console.log('Servidor iniciado na porta 3000');
-  });
 
 function checkToken(req, res, next) {
     const authHeader = req.headers['authorization']
