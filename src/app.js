@@ -15,17 +15,17 @@ app.use(express.json())
 //Models.
 const User = require('../models/User')
 
-// Public route
+// rota Publica
 app.get('/', (req, res) => {
     res.status(200).json({ msg: 'Bem Vindo ao Meu Servidor' });
   });
 
 
-//Private Route
+//Rota Privada
 app.get('/user/:id', checkToken, async (req, res) => {
     const id = req.params.id
 
-    // check if user exists
+    // checar usuarios existentes
     const user = await User.findById(id, '-password')
 
     if(!user) {
@@ -57,14 +57,14 @@ function checkToken(req, res, next) {
     }
 }
 
-// Adicione a seguinte rota para servir a página index.html após a autenticação
+// Adicione rota para logar na página index.html após a autenticação
 app.get('/index.html', checkToken, (req, res) => {
     // Se o middleware passar, significa que o usuário está autenticado
     // Redirecione para o index.html no outro domínio
     res.redirect('https://coldplay-fans.vercel.app/index.html');
 });
 
-// Adicione esta função de middleware para verificar o token
+
 function checkToken(req, res, next) {
     const authHeader = req.headers['authorization'];
     const token = authHeader && authHeader.split(" ")[1];
@@ -83,12 +83,12 @@ function checkToken(req, res, next) {
 }
 
 
-// Register User
+// Registrar Usuários
 app.post('/auth/register', async(req, res) => {
 
     const {name, email, password, confirmpassword} = req.body
 
-    //validations 
+    //validações 
     if(!name) {
         return res.status(422).json({msg: 'O nome é Obrigatório!'})
     }
@@ -112,11 +112,11 @@ app.post('/auth/register', async(req, res) => {
             return res.status(422).json({msg: 'Esse e-mail já foi cadastrado'})
         }
 
-        // create password
+        // criar senhas
         const salt = await bcrypt.genSalt(12)
         const passwordHash = await bcrypt.hash(password, salt)
 
-        //create User 
+        //criar usuário
         const user = new User({
             name,
             email,
@@ -136,7 +136,7 @@ app.post('/auth/register', async(req, res) => {
         }
 })
 
-// login User
+// Logar Usuário
 
 app.post("/auth/login", async (req, res) => {
     const {email, password} = req.body
