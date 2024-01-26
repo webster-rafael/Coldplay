@@ -82,6 +82,27 @@ function checkToken(req, res, next) {
     }
 }
 
+// ...
+
+// Adicione um middleware de autenticação global para proteger todas as rotas
+app.use((req, res, next) => {
+    // Verifique a autenticação aqui antes de permitir o acesso às rotas protegidas
+    const authHeader = req.headers['authorization'];
+    const token = authHeader && authHeader.split(" ")[1];
+
+    if (!token) {
+        return res.status(401).json({ msg: "Acesso Negado!" });
+    }
+
+    try {
+        const secret = process.env.SECRET;
+        jwt.verify(token, secret);
+        next();
+    } catch(error) {
+        res.status(400).json({ msg: "Token Inválido" });
+    }
+});
+
 
 // Register User
 app.post('/auth/register', async(req, res) => {
