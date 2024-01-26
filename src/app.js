@@ -16,7 +16,7 @@ app.use(express.json())
 const User = require('../models/User')
 
 // Public route
-app.get('./src/login.html', (req, res) => {
+app.get('/', (req, res) => {
     res.status(200).json({ msg: 'Bem Vindo ao Meu Servidor' });
   });
 
